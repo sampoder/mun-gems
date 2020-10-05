@@ -38,36 +38,53 @@ export default function Home() {
         >
           <Row>
             <Col
-              sm={6}
+              sm={!isXS && 6}
               style={{
-                height: "100vh",
+                minHeight: "100vh",
                 background: "black",
                 color: "white",
-                padding: "60px",
-                paddingTop: "40px",
-                
+                padding: isXS && "20px",
+                padding: !isXS && "60px",
+                width: isXS && "calc(100% - 60px)",
+                paddingTop: !isXS && "40px",
                 backgroundImage:
                   "linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 26%), linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 26%), url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%23c39eff' fill-opacity='0.07'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E\")",
               }}
             >
-              <p style={{ textDecoration: "underline" }}>
+              <p
+                style={{ textDecoration: "underline", display: isSM || isXS && "none"}}
+              >
                 MUN @ GEMS - March 28 & 29th
               </p>
-              <div className={styles.verticalCenter}>
-                <h3 style={{ marginBlockStart: "0em", marginBlockEnd: "0em" }}>
+              <div className={styles.verticalCenter} style={{paddingLeft: !isXS && "0px", paddingLeft: isXS && "20px"}}>
+                <h3
+                  style={{
+                    marginBlockStart: "0em",
+                    marginBlockEnd: "0em",
+                    fontSize: isXS && "20px",
+                    width: isXS && "calc(100% - 60px)",
+                  }}
+                >
                   What change would you make if you were
                 </h3>
                 <h1
                   style={{
-                    fontSize: "80px",
                     marginBlockStart: "0em",
                     marginBlockEnd: "0em",
                     lineHeight: "1.35",
+                    fontSize: isXS && "60px",
+                    fontSize: !isXS && "80px",
                   }}
                 >
                   Black Panther?
                 </h1>
-                <p style={{ marginBlockStart: "0.1em", paddingRight: "150px" }}>
+                <p
+                  style={{
+                    marginBlockStart: "0.1em",
+                    paddingRight: !isXS && "150px",
+                    width: isXS && "calc(100% - 40px)",
+                  }}
+                >
                   At MUN @ GEMS (March 28 & 29th), you have the chance to
                   represent cultural icons and draft solutions for major issues
                   in fictional worlds. Our committees include Marvel vs. DC,
@@ -106,7 +123,12 @@ export default function Home() {
           <Grid.Container
             gap={2}
             justify="center"
-            style={{ padding: "40px", paddingBottom: "10px" }}
+            style={{
+              padding: isXS && "10px",
+              padding: !isXS && "40px",
+
+              paddingBottom: "10px",
+            }}
           >
             <Grid xs={24} md={16} sm={24} style={{ padding: "10px" }}>
               <Card>
@@ -175,7 +197,8 @@ export default function Home() {
             gap={2}
             justify="center"
             style={{
-              padding: "40px",
+              padding: isXS && "10px",
+              padding: !isXS && "40px",
               paddingTop: "10px",
               paddingBottom: "10px",
             }}
@@ -254,7 +277,13 @@ export default function Home() {
           <Grid.Container
             gap={2}
             justify="center"
-            style={{ padding: "40px", paddingTop: "10px", paddingBottom: "10px" }}
+            style={{
+              padding: isXS && "10px",
+              padding: !isXS && "40px",
+
+              paddingTop: "10px",
+              paddingBottom: "10px",
+            }}
           >
             <Grid xs={24} md={24} sm={24}>
               <Card>
@@ -317,7 +346,12 @@ export default function Home() {
           <Grid.Container
             gap={2}
             justify="center"
-            style={{ padding: "40px", paddingTop: "10px" }}
+            style={{
+              padding: isXS && "10px",
+              padding: !isXS && "40px",
+
+              paddingTop: "10px",
+            }}
           >
             <Grid xs={24} md={24} sm={24}>
               <Card>
@@ -327,7 +361,12 @@ export default function Home() {
                       Tickets are $5 per person, all money goes to charity.
                     </h3>
                   </Grid>
-                  <Grid xs={24} md={12} sm={12} style={{ textAlign: "right" }}>
+                  <Grid
+                    xs={24}
+                    md={12}
+                    sm={12}
+                    style={{ textAlign: !isXS && "right" }}
+                  >
                     <Button type="secondary" style={{ marginTop: "-1px" }}>
                       Opening January 10th
                     </Button>
@@ -341,9 +380,13 @@ export default function Home() {
 
       <footer className={styles.footer}>
         <span>
-        <span><b>Contact email:</b> <a href="mailto:mun@gwa.edu.sg">mun@gwa.edu.sg</a>.</span>
+          <span>
+            <b>Contact email:</b>{" "}
+            <a href="mailto:mun@gwa.edu.sg">mun@gwa.edu.sg</a>.
+          </span>
           <br /> <br />
-          Supported by <a href="https://gwa.edu.sg">GEMS World Academy Singapore.</a>
+          Supported by{" "}
+          <a href="https://gwa.edu.sg">GEMS World Academy Singapore.</a>
         </span>
       </footer>
     </div>
