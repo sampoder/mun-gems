@@ -32,7 +32,7 @@ export default function Home() {
         <Container
           style={{
             width: "100%",
-            height: "100vh",
+            minHeight: "100vh",
             maxWidth: "300000000px",
             padding: "0px",
           }}
@@ -139,13 +139,11 @@ export default function Home() {
               <Col
                 sm={12}
                 style={{
-                  minHeight: "100vh",
                   background: "black",
+                  paddingTop: '90px',
                   color: "white",
-                  padding: isXS && "20px",
-                  padding: !isXS && "60px",
                   width: isXS && "calc(100% - 60px)",
-                  paddingTop: !isXS && "40px",
+                  paddingBottom: '90px',
                   backgroundImage:
                     "linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 26%), linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 26%), url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%23c39eff' fill-opacity='0.07'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E\")",
                 }}
@@ -158,7 +156,6 @@ export default function Home() {
                   }}
                 ></p>
                 <div
-                  className={styles.verticalCenter}
                   style={{
                     paddingLeft: !isXS && "0px",
                     paddingLeft: isXS && "20px",
