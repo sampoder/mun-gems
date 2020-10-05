@@ -36,7 +36,7 @@ export default function Home() {
             padding: "0px",
           }}
         >
-          <Row>
+          <Row style={{display: isXS && "none" }}>
             <Col
               sm={6}
               style={{
