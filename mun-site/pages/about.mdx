@@ -1,0 +1,85 @@
+import Head from "next/head";
+import styles from "../styles/About.module.css";
+import { Container, Row, Col } from "react-grid-system";
+import {
+  Button,
+  Image,
+  Card,
+  Link,
+  Divider,
+  Display,
+  Collapse,
+  Text,
+  Grid,
+  useMediaQuery,
+  Badge,
+  Row as GeistRow,
+} from "@geist-ui/react";
+
+<Head>
+  <title>Create Next App</title>
+  <link rel="icon" href="/favicon.ico" />
+</Head>
+<a href="/">
+  <Badge
+    size="large"
+    style={{ marginTop: "20px", marginBottom: "20px", padding: "5px 10px" }}
+  >
+    {"MUN @ GEMS"}
+  </Badge>
+</a>
+
+# About us
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fusce id velit ut tortor pretium. Vel turpis nunc eget lorem dolor. Semper feugiat nibh sed pulvinar proin gravida. Interdum varius sit amet mattis vulputate. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus mauris. Cras adipiscing enim eu turpis egestas. Facilisi morbi tempus iaculis urna. Tellus at urna condimentum mattis. Aliquam malesuada bibendum arcu vitae elementum.
+
+Nisl nisi scelerisque eu ultrices. Ut enim blandit volutpat maecenas volutpat blandit aliquam. At urna condimentum mattis pellentesque. Sagittis aliquam malesuada bibendum arcu. Lobortis scelerisque fermentum dui faucibus in ornare. Quam id leo in vitae turpis. Aliquet risus feugiat in ante metus dictum at tempor. Commodo sed egestas egestas fringilla. Nulla pellentesque dignissim enim sit amet venenatis urna. Arcu dictum varius duis at consectetur lorem donec massa. Consectetur libero id faucibus nisl tincidunt eget. Et malesuada fames ac turpis egestas. Aliquam id diam maecenas ultricies mi eget mauris. Maecenas accumsan lacus vel facilisis volutpat. Diam sollicitudin tempor id eu nisl nunc mi. Diam volutpat commodo sed egestas egestas fringilla. Ut pharetra sit amet aliquam id diam. Sit amet dictum sit amet justo. Vivamus at augue eget arcu dictum varius duis.
+
+<Display
+  shadow
+  style={{objectFit: 'cover', float: 'right', margin: '30px 0px 0px 0px', marginLeft: '30px'}}
+  caption={
+    <p>
+      Our founder Sai and student officer Tanisha at an MUN.
+    </p>
+  }
+>
+  <Image width={446} height={446}  style={{objectFit: 'cover'}} src="https://cloud-rili0t7tg.vercel.app/82225120_1255964828124592_8113147521939543579_n.jpg" />
+</Display>
+
+Vel risus commodo viverra maecenas accumsan lacus vel facilisis volutpat. At in tellus
+integer feugiat scelerisque varius morbi. Id aliquet lectus proin nibh nisl condimentum
+id venenatis a. Pharetra vel turpis nunc eget lorem. Cursus vitae congue mauris rhoncus
+aenean vel elit scelerisque. Dolor purus non enim praesent elementum facilisis. Sodales
+neque sodales ut etiam sit amet nisl purus in. Sed blandit libero volutpat sed cras
+ornare arcu dui vivamus. Lacinia at quis risus sed. At auctor urna nunc id cursus
+metus aliquam eleifend mi. Habitasse platea dictumst quisque sagittis purus sit amet.
+Consequat mauris nunc congue nisi vitae suscipit tellus mauris. Non odio euismod
+lacinia at quis risus sed vulputate. Tellus mauris a diam maecenas sed. Nisl vel
+pretium lectus quam id leo in. Malesuada bibendum arcu vitae elementum curabitur.
+
+Volutpat blandit aliquam etiam erat velit scelerisque in. Suscipit adipiscing bibendum est ultricies. Commodo odio aenean sed adipiscing diam donec adipiscing. Nibh praesent tristique magna sit amet purus gravida quis blandit. Duis tristique sollicitudin nibh sit amet commodo nulla. Ornare aenean euismod elementum nisi quis eleifend quam adipiscing. Ornare massa eget egestas purus viverra accumsan. Commodo elit at imperdiet dui. Etiam erat velit scelerisque in dictum non consectetur a. Vestibulum lorem sed risus ultricies tristique nulla. Netus et malesuada fames ac turpis egestas integer. Fermentum dui faucibus in ornare. Faucibus ornare suspendisse sed nisi lacus sed viverra.
+
+Aliquam vestibulum morbi blandit cursus risus at ultrices. Sed augue lacus viverra vitae congue. Ullamcorper velit sed ullamcorper morbi. Feugiat vivamus at augue eget arcu. A diam sollicitudin tempor id eu nisl nunc. Netus et malesuada fames ac turpis egestas maecenas. Nisl pretium fusce id velit ut tortor pretium. Tristique senectus et netus et. Donec enim diam vulputate ut. Faucibus ornare suspendisse sed nisi lacus. Non nisi est sit amet facilisis. Ipsum faucibus vitae aliquet nec ullamcorper sit amet risus nullam. Proin nibh nisl condimentum id venenatis a. Massa eget egestas purus viverra accumsan in. Eget mauris pharetra et ultrices neque ornare aenean euismod. Erat velit scelerisque in dictum non consectetur. Sit amet massa vitae tortor. Lorem ipsum dolor sit amet consectetur adipiscing. Lacus vestibulum sed arcu non odio euismod lacinia at.
+
+<footer className={styles.footer}>
+  <span>
+    <span>
+      <b>Contact email:</b> <a href="mailto:mun@gwa.edu.sg">mun@gwa.edu.sg</a>.
+    </span>
+    <br /> <br />
+    Supported by <a href="https://gwa.edu.sg">GEMS World Academy Singapore.</a>
+  </span>
+</footer>
+
+<style jsx global>
+  {`
+    body {
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+    .caption.jsx-435874419{
+      margin-top: 10px;
+    }
+  `}
+</style>

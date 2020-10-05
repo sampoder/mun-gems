@@ -15,15 +15,15 @@ import {
 } from "@geist-ui/react";
 
 export default function Home() {
-  const isXS = useMediaQuery('xs')
-  const isSM = useMediaQuery('sm')
-  const isMD = useMediaQuery('md')
-  const isLG = useMediaQuery('lg')
-  const isXL = useMediaQuery('xl')
+  const isXS = useMediaQuery("xs");
+  const isSM = useMediaQuery("sm");
+  const isMD = useMediaQuery("md");
+  const isLG = useMediaQuery("lg");
+  const isXL = useMediaQuery("xl");
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>MUN @ GEMS</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -76,13 +76,6 @@ export default function Home() {
                 <Button
                   auto
                   type="secondary"
-                  style={{ border: "1px white solid", marginRight: "12px" }}
-                >
-                  Learn more.
-                </Button>
-                <Button
-                  auto
-                  type="secondary"
                   style={{ border: "1px white solid" }}
                 >
                   Sign up now.
@@ -132,7 +125,7 @@ export default function Home() {
                   United Nations in maintaining World Peace.
                 </p>
                 <Card.Footer>
-                  <Link color target="_blank" href="/about">
+                  <Link color href="/about">
                     More about us
                   </Link>
                 </Card.Footer>
@@ -259,7 +252,7 @@ export default function Home() {
           <Grid.Container
             gap={2}
             justify="center"
-            style={{ padding: "40px", paddingTop: "10px" }}
+            style={{ padding: "40px", paddingTop: "10px", paddingBottom: "10px" }}
           >
             <Grid xs={24} md={24} sm={24}>
               <Card>
@@ -277,13 +270,19 @@ export default function Home() {
                       <Collapse title="What is the theme?">
                         <Text>When fantasy meets reality!</Text>
                       </Collapse>
-                      <Collapse style={{ display: !isXS && 'none' }} title="Who can attend MUN @ GEMS?">
+                      <Collapse
+                        style={{ display: !isXS && "none" }}
+                        title="Who can attend MUN @ GEMS?"
+                      >
                         <Text>
                           Any student in Grade 6 to 11, or their school's
                           equivalent.
                         </Text>
                       </Collapse>
-                      <Collapse style={{ display: !isXS && 'none' }} title="What is the official language of the conference?">
+                      <Collapse
+                        style={{ display: !isXS && "none" }}
+                        title="What is the official language of the conference?"
+                      >
                         <Text>
                           All sessions will be in English, participants will
                           require conversation level proficiency.
@@ -292,7 +291,9 @@ export default function Home() {
                     </Collapse.Group>
                   </Grid>
                   <Grid xs={24} md={12} sm={12}>
-                    <Collapse.Group style={{ padding: "0 0pt", display: isXS && 'none' }} >
+                    <Collapse.Group
+                      style={{ padding: "0 0pt", display: isXS && "none" }}
+                    >
                       <Collapse title="Who can attend MUN @ GEMS?">
                         <Text>
                           Any student in Grade 6 to 11, or their school's
@@ -337,8 +338,11 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
-        Supported by GEMS World Academy Singapore. Website by @sampoder, always
-        open source.
+        <span>
+        <span><b>Contact email:</b> <a href="mailto:mun@gwa.edu.sg">mun@gwa.edu.sg</a>.</span>
+          <br /> <br />
+          Supported by <a href="https://gwa.edu.sg">GEMS World Academy Singapore.</a>
+        </span>
       </footer>
     </div>
   );
