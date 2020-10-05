@@ -37,129 +37,171 @@ export default function Home() {
             padding: "0px",
           }}
         >
-          <Row>
-            <Col
-              sm={isSM || (isXS && 12)}
-              style={{
-                minHeight: "100vh",
-                background: "black",
-                color: "white",
-                padding: isXS && "20px",
-                padding: !isXS && "60px",
-                width: isXS && "calc(100% - 60px)",
-                paddingTop: !isXS && "40px",
-                backgroundImage:
-                  "linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 26%), linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 26%), url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%23c39eff' fill-opacity='0.07'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E\")",
-              }}
-            >
-              <p
+          {" "}
+          {(isLG || isMD || isXL) && (
+            <Row>
+              <Col
+                sm={isSM || (isXS && 12)}
                 style={{
-                  fontWeight: "800",
-                  fontSize: "1.2em",
-                  display: (isSM || isXS) && "none",
-                }}
-              >
-                <Badge
-                  type="success"
-                  style={{ fontSize: "1em", padding: "10px 20px" }}
-                >
-                  MUN @ GEMS - March 28 & 29th
-                </Badge>
-              </p>
-              <div
-                className={styles.verticalCenter}
-                style={{
-                  paddingLeft: !isXS && "0px",
-                  paddingLeft: isXS && "20px",
+                  minHeight: "100vh",
+                  background: "black",
+                  color: "white",
+                  padding: isXS && "20px",
+                  padding: !isXS && "60px",
+                  width: isXS && "calc(100% - 60px)",
+                  paddingTop: !isXS && "40px",
+                  backgroundImage:
+                    "linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 26%), linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 26%), url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%23c39eff' fill-opacity='0.07'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E\")",
                 }}
               >
                 <p
                   style={{
                     fontWeight: "800",
                     fontSize: "1.2em",
-                    display: (isMD || isLG || isXL) && "none",
+                    display: (isSM || isXS) && "none",
                   }}
                 >
                   <Badge
                     type="success"
-                    style={{
-                      fontSize: "1em",
-                      padding: "10px 20px",
-                      display: isLG && "none",
-                    }}
+                    style={{ fontSize: "1em", padding: "10px 20px" }}
                   >
                     MUN @ GEMS - March 28 & 29th
                   </Badge>
                 </p>
-                <Image
-                  width={"90%"}
-                  height={160}
+                <div
+                  className={styles.verticalCenter}
                   style={{
-                    objectFit: "cover",
-                    objectPosition: "top",
-                    width: "90%",
-                    display: (isMD || isLG || isXL) && "none",
-                  }}
-                  src="https://i.pinimg.com/originals/90/3d/a5/903da5243a51e0ee18c73c748a920267.gif"
-                />
-                <h3
-                  style={{
-                    marginBlockStart: "0em",
-                    marginBlockEnd: "0em",
-                    fontSize: isXS && "20px",
-                    width: isXS && "calc(100% - 60px)",
-                    display: (isSM || isXS) && "none",
+                    paddingLeft: !isXS && "0px",
+                    paddingLeft: isXS && "20px",
                   }}
                 >
-                  What change would you make if you were
-                </h3>
-                <h1
-                  style={{
-                    marginBlockStart: "0em",
-                    marginBlockEnd: "0em",
-                    lineHeight: "1.35",
-                    fontSize: isXS && "60px",
-                    fontSize: !isXS && "80px",
-                    display: (isSM || isXS) && "none",
-                  }}
-                >
-                  Black Panther?
-                </h1>
+                  <h3
+                    style={{
+                      marginBlockStart: "0em",
+                      marginBlockEnd: "0em",
+                      fontSize: "20px",
+                      width: isXS && "calc(100% - 60px)",
+                      display: (isSM || isXS) && "none",
+                    }}
+                  >
+                    What change would you make if you were
+                  </h3>
+                  <h1
+                    style={{
+                      marginBlockStart: "0em",
+                      marginBlockEnd: "0em",
+                      lineHeight: "1.35",
+                      fontSize: isXS && "60px",
+                      fontSize: !isXS && "80px",
+                      display: (isSM || isXS) && "none",
+                    }}
+                  >
+                    Black Panther?
+                  </h1>
+                  <p
+                    style={{
+                      marginBlockStart: "0.1em",
+                      paddingRight: !isXS && "150px",
+                      width: isXS && "calc(100% - 40px)",
+                    }}
+                  >
+                    At MUN @ GEMS (March 28 & 29th), you have the chance to
+                    represent cultural icons and draft solutions for major
+                    issues in fictional worlds. Our committees include Marvel
+                    vs. DC, Star Wars & the Wizarding World. It's a great way to
+                    have fun and get started with MUN!
+                  </p>
+                  <Button
+                    auto
+                    type="secondary"
+                    style={{ border: "1px white solid" }}
+                  >
+                    Sign up now.
+                  </Button>
+                </div>
+              </Col>
+              <Col
+                sm={6}
+                style={{
+                  height: "100vh",
+                  display: isSM && "none",
+                  display: isXS && "none",
+                  background:
+                    "linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 56%), linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 46%), url('https://i.pinimg.com/originals/90/3d/a5/903da5243a51e0ee18c73c748a920267.gif'), rgba(0,0,0,0)",
+                  backgroundPosition: "center",
+                  backgroundSize: "cover",
+                }}
+              ></Col>
+            </Row>
+          )}
+          {(isSM || isXS) && (
+            <Row>
+              <Col
+                sm={12}
+                style={{
+                  minHeight: "100vh",
+                  background: "black",
+                  color: "white",
+                  padding: isXS && "20px",
+                  padding: !isXS && "60px",
+                  width: isXS && "calc(100% - 60px)",
+                  paddingTop: !isXS && "40px",
+                  backgroundImage:
+                    "linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 26%), linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 26%), url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%23c39eff' fill-opacity='0.07'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E\")",
+                }}
+              >
                 <p
                   style={{
-                    marginBlockStart: "0.1em",
-                    paddingRight: !isXS && "150px",
-                    width: isXS && "calc(100% - 40px)",
+                    fontWeight: "800",
+                    fontSize: "1.2em",
+                    display: (isSM || isXS) && "none",
+                  }}
+                ></p>
+                <div
+                  className={styles.verticalCenter}
+                  style={{
+                    paddingLeft: !isXS && "0px",
+                    paddingLeft: isXS && "20px",
                   }}
                 >
-                  At MUN @ GEMS (March 28 & 29th), you have the chance to
-                  represent cultural icons and draft solutions for major issues
-                  in fictional worlds. Our committees include Marvel vs. DC,
-                  Star Wars & the Wizarding World. It's a great way to have fun
-                  and get started with MUN!
-                </p>
-                <Button
-                  auto
-                  type="secondary"
-                  style={{ border: "1px white solid" }}
-                >
-                  Sign up now.
-                </Button>
-              </div>
-            </Col>
-            <Col
-              sm={6}
-              style={{
-                height: "100vh",
-                display: isSM && "none",
-                display: isXS && "none",
-                background:
-                  "linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 56%), linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 46%), url('https://i.pinimg.com/originals/90/3d/a5/903da5243a51e0ee18c73c748a920267.gif'), rgba(0,0,0,0)",
-                backgroundPosition: "center",
-                backgroundSize: "cover",
-              }}
-            ></Col>
-          </Row>
+                  <Badge
+                    type="success"
+                    style={{ fontSize: "1em", padding: "10px 20px", fontWeight: '800' }}
+                  >
+                    MUN @ GEMS - March 28 & 29th
+                  </Badge>
+
+                  <Image
+                    height={400}
+                    width={"80%"}
+                    style={{ objectFit: 'cover', objectPosition: 'top', margin: '30px 0 20px', width: '80%', marginBottom: '30px'}}
+                    src="https://i.pinimg.com/originals/90/3d/a5/903da5243a51e0ee18c73c748a920267.gif"
+                  />
+
+                  <p
+                    style={{
+                      marginBlockStart: "1em",
+                      paddingRight: !isXS && "150px",
+                      width: isXS && "calc(100% - 40px)",
+                    }}
+                  >
+                    At MUN @ GEMS (March 28 & 29th), you have the chance to
+                    represent cultural icons and draft solutions for major
+                    issues in fictional worlds. Our committees include Marvel
+                    vs. DC, Star Wars & the Wizarding World. It's a great way to
+                    have fun and get started with MUN!
+                  </p>
+                  <Button
+                    auto
+                    type="secondary"
+                    style={{ border: "1px white solid" }}
+                  >
+                    Sign up now.
+                  </Button>
+                </div>
+              </Col>
+            </Row>
+          )}
         </Container>
         <Container
           style={{
