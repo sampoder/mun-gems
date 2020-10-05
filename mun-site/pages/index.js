@@ -6,6 +6,7 @@ import {
   Image,
   Card,
   Link,
+  Badge,
   Divider,
   Collapse,
   Text,
@@ -38,7 +39,7 @@ export default function Home() {
         >
           <Row>
             <Col
-              sm={!isXS && 6}
+              sm={isSM || (isXS && 12)}
               style={{
                 minHeight: "100vh",
                 background: "black",
@@ -52,17 +53,62 @@ export default function Home() {
               }}
             >
               <p
-                style={{ textDecoration: "underline", display: isSM || isXS && "none"}}
+                style={{
+                  fontWeight: "800",
+                  fontSize: "1.2em",
+                  display: (isSM || isXS) && "none",
+                }}
               >
-                MUN @ GEMS - March 28 & 29th
+                <Badge
+                  type="success"
+                  style={{ fontSize: "1em", padding: "10px 20px" }}
+                >
+                  MUN @ GEMS - March 28 & 29th
+                </Badge>
               </p>
-              <div className={styles.verticalCenter} style={{paddingLeft: !isXS && "0px", paddingLeft: isXS && "20px"}}>
+              <div
+                className={styles.verticalCenter}
+                style={{
+                  paddingLeft: !isXS && "0px",
+                  paddingLeft: isXS && "20px",
+                }}
+              >
+                <p
+                  style={{
+                    fontWeight: "800",
+                    fontSize: "1.2em",
+                    display: (isMD || isLG || isXL) && "none",
+                  }}
+                >
+                  <Badge
+                    type="success"
+                    style={{
+                      fontSize: "1em",
+                      padding: "10px 20px",
+                      display: isLG && "none",
+                    }}
+                  >
+                    MUN @ GEMS - March 28 & 29th
+                  </Badge>
+                </p>
+                <Image
+                  width={"90%"}
+                  height={160}
+                  style={{
+                    objectFit: "cover",
+                    objectPosition: "top",
+                    width: "90%",
+                    display: (isMD || isLG || isXL) && "none",
+                  }}
+                  src="https://i.pinimg.com/originals/90/3d/a5/903da5243a51e0ee18c73c748a920267.gif"
+                />
                 <h3
                   style={{
                     marginBlockStart: "0em",
                     marginBlockEnd: "0em",
                     fontSize: isXS && "20px",
                     width: isXS && "calc(100% - 60px)",
+                    display: (isSM || isXS) && "none",
                   }}
                 >
                   What change would you make if you were
@@ -74,6 +120,7 @@ export default function Home() {
                     lineHeight: "1.35",
                     fontSize: isXS && "60px",
                     fontSize: !isXS && "80px",
+                    display: (isSM || isXS) && "none",
                   }}
                 >
                   Black Panther?
@@ -104,6 +151,7 @@ export default function Home() {
               sm={6}
               style={{
                 height: "100vh",
+                display: isSM && "none",
                 display: isXS && "none",
                 background:
                   "linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 56%), linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 46%), url('https://i.pinimg.com/originals/90/3d/a5/903da5243a51e0ee18c73c748a920267.gif'), rgba(0,0,0,0)",
