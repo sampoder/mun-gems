@@ -36,7 +36,7 @@ export default function Home() {
             padding: "0px",
           }}
         >
-          <Row style={{display: isXS && "none" }}>
+          <Row>
             <Col
               sm={6}
               style={{
@@ -45,6 +45,7 @@ export default function Home() {
                 color: "white",
                 padding: "60px",
                 paddingTop: "40px",
+                
                 backgroundImage:
                   "linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 26%), linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 26%), url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%23c39eff' fill-opacity='0.07'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E\")",
               }}
@@ -86,6 +87,7 @@ export default function Home() {
               sm={6}
               style={{
                 height: "100vh",
+                display: isXS && "none",
                 background:
                   "linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 56%), linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 46%), url('https://i.pinimg.com/originals/90/3d/a5/903da5243a51e0ee18c73c748a920267.gif'), rgba(0,0,0,0)",
                 backgroundPosition: "center",
