@@ -14,6 +14,7 @@ import {
   useMediaQuery,
   Row as GeistRow,
 } from "@geist-ui/react";
+import Meta from '../components/meta'
 
 export default function Home() {
   const isXS = useMediaQuery("xs");
@@ -23,10 +24,7 @@ export default function Home() {
   const isXL = useMediaQuery("xl");
   return (
     <div className={styles.container}>
-      <Head>
-        <title>MUN @ GEMS</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <Meta as="head" />
 
       <main className={styles.main}>
         <Container
