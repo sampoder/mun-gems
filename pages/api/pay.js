@@ -5,11 +5,11 @@ export default async (req, res) => {
     payment_method_types: ['card'],
     line_items: [
       {
-        name: 'Serverless Functions – The Complete Guide',
-        description: '100 page e-book on serverless functions.',
+        name: 'Ticket to MUN @ GEMS',
+        description: 'A different kind of MUN conference.',
         images: ['https://site.com/image.png'],
-        amount: '5000', // Cents
-        currency: 'usd',
+        amount: '500', // Cents
+        currency: 'sgd',
         quantity: 1
       }
     ],
