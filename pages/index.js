@@ -14,7 +14,33 @@ import {
   useMediaQuery,
   Row as GeistRow,
 } from "@geist-ui/react";
-import Meta from '../components/meta'
+import Meta from "../components/meta";
+import { loadStripe } from "@stripe/stripe-js";
+const stripePromise = loadStripe(
+  "pk_test_51HYoodLM7aPhXtdijpr8GzKtoqM38DpTZX1Wu1C0OAhe7zy48UYAb6yz8k9Cr2bVDWTls5zlpMrZEEnB4ZSQI0Z000WDB7zjSx"
+);
+
+const handleClick = async (event) => {
+  // Get Stripe.js instance
+  const stripe = await stripePromise;
+
+  // Call your backend to create the Checkout Session
+  const response = await fetch("/api/pay", {
+    method: "POST",
+  });
+
+  const session = await response.json();
+
+  // When the customer clicks on the button, redirect them to Checkout.
+  const result = await stripe.redirectToCheckout({
+    sessionId: session.id,
+  });
+  if (result.error) {
+    // If `redirectToCheckout` fails due to a browser or network
+    // error, display the localized error message to your customer
+    // using `result.error.message`.
+  }
+};
 
 export default function Home() {
   const isXS = useMediaQuery("xs");
@@ -22,6 +48,7 @@ export default function Home() {
   const isMD = useMediaQuery("md");
   const isLG = useMediaQuery("lg");
   const isXL = useMediaQuery("xl");
+
   return (
     <div className={styles.container}>
       <Meta as="head" />
@@ -138,10 +165,10 @@ export default function Home() {
                 sm={12}
                 style={{
                   background: "black",
-                  paddingTop: '90px',
+                  paddingTop: "90px",
                   color: "white",
                   width: isXS && "calc(100% - 60px)",
-                  paddingBottom: '90px',
+                  paddingBottom: "90px",
                   backgroundImage:
                     "linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 26%), linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 26%), url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%23c39eff' fill-opacity='0.07'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E\")",
                 }}
@@ -161,7 +188,11 @@ export default function Home() {
                 >
                   <Badge
                     type="success"
-                    style={{ fontSize: "1em", padding: "10px 20px", fontWeight: '800' }}
+                    style={{
+                      fontSize: "1em",
+                      padding: "10px 20px",
+                      fontWeight: "800",
+                    }}
                   >
                     MUN @ GEMS - March 28 & 29th
                   </Badge>
@@ -169,7 +200,13 @@ export default function Home() {
                   <Image
                     height={400}
                     width={"80%"}
-                    style={{ objectFit: 'cover', objectPosition: 'top', margin: '30px 0 20px', width: '80%', marginBottom: '30px'}}
+                    style={{
+                      objectFit: "cover",
+                      objectPosition: "top",
+                      margin: "30px 0 20px",
+                      width: "80%",
+                      marginBottom: "30px",
+                    }}
                     src="https://i.pinimg.com/originals/90/3d/a5/903da5243a51e0ee18c73c748a920267.gif"
                   />
 
@@ -452,7 +489,11 @@ export default function Home() {
                     sm={12}
                     style={{ textAlign: !isXS && "right" }}
                   >
-                    <Button type="secondary" style={{ marginTop: "-1px" }}>
+                    <Button
+                      type="secondary"
+                      style={{ marginTop: "-1px" }}
+                      onClick={handleClick}
+                    >
                       Opening January 10th
                     </Button>
                   </Grid>
