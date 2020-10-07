@@ -494,7 +494,7 @@ export default function Home() {
                       style={{ marginTop: "-1px" }}
                       onClick={handleClick}
                     >
-                      Opening January 10th
+                      Register
                     </Button>
                   </Grid>
                 </Grid.Container>
