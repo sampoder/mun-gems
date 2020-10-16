@@ -140,6 +140,7 @@ export default function Home() {
                     auto
                     type="secondary"
                     style={{ border: "1px white solid" }}
+                    onClick={handleClick}
                   >
                     Sign up now.
                   </Button>
