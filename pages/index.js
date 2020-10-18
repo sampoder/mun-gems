@@ -367,7 +367,7 @@ export default function Home() {
                   height="200"
                   style={{ objectFit: "cover" }}
                 />
-                <h4>Unnamed Committee</h4>
+                <h4>The World of Athletics</h4>
                 <p>
                   The first topic for the committee will be the matter of
                   payment for NCAA college athletes and whether or not they
