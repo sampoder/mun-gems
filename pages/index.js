@@ -153,7 +153,7 @@ export default function Home() {
                   display: isSM && "none",
                   display: isXS && "none",
                   background:
-                    "linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 56%), linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 46%), url('https://i.pinimg.com/originals/90/3d/a5/903da5243a51e0ee18c73c748a920267.gif'), rgba(0,0,0,0)",
+                    "linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 56%), linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 46%), url('https://i.pinimg.com/originals/90/3d/a5/903da5243a51e0ee18c73c748a920267.gif'), url('https://storage.googleapis.com/file-in.appspot.com/files/IfBo6Q6T2n.png'), rgba(0,0,0,0)",
                   backgroundPosition: "center",
                   backgroundSize: "cover",
                 }}
