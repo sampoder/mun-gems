@@ -1,0 +1,309 @@
+import Head from "next/head";
+import styles from "../styles/About.module.css";
+import {
+  Button,
+  Image,
+  Card,
+  Link,
+  Divider,
+  Spacer,
+  Display,
+  Collapse,
+  Text,
+  Grid,
+  useMediaQuery,
+  Badge,
+  Row,
+  Note,
+  Col,
+} from "@geist-ui/react";
+import TeamMember from "../components/teammember";
+import Schedule from "../components/schedule";
+import Terms from "../components/terms";
+
+<Head>
+  <title>About us - MUN @ GEMS</title>
+  <link rel="icon" href="/favicon.ico" />
+</Head>
+<div style={{background: 'black', width: "100%", position: 'fixed', zIndex: '4000'}}>
+<div style={{ maxWidth: "800px", width: "100%", margin: "auto" }}>
+  <Row gap={0.8} style={{ padding: "0px" }}>
+    <Col span={6} style={{ paddingLeft: "0px" }}>
+      <a href="/">
+        <Badge
+          size="large"
+          style={{
+            marginTop: "20px",
+            marginBottom: "20px",
+            padding: "5px 10px",
+          }}
+        >
+          {"MUN @ GEMS"}
+        </Badge>
+      </a>
+    </Col>
+    <Col span={18}>
+      <p style={{ textAlign: "right", paddingTop: "3px" }}>
+        <Link href="#exec" color style={{ padding: "0px 6px" }}>
+          Executive Team
+        </Link>
+        |<Link href="#exec" color style={{ padding: "0px 6px" }}>
+          Schedule
+        </Link>|
+        <Link href="#exec" color style={{ padding: "0px 6px" }}>
+          Committees
+        </Link>
+        |<Link href="#exec" color style={{ padding: "0px 6px" }}>
+          Rules of Procedure
+        </Link>|
+        <Link href="#exec" color style={{ paddingLeft: "6px" }}>
+          General Info
+        </Link>
+      </p>
+    </Col>
+  </Row>
+</div>
+</div>
+<main style={{ maxWidth: '800px', margin: 'auto', marginTop: '90px'}}>
+
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla aliquet enim tortor at auctor urna nunc. Vel quam elementum pulvinar etiam. Nunc lobortis mattis aliquam faucibus purus. Augue ut lectus arcu bibendum at varius vel. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit. Volutpat commodo sed egestas egestas fringilla phasellus. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget. Nam libero justo laoreet sit amet cursus sit. Risus ultricies tristique nulla aliquet enim tortor. Imperdiet proin fermentum leo vel orci porta. Aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis. Aenean euismod elementum nisi quis eleifend quam adipiscing. Venenatis a condimentum vitae sapien.
+
+Convallis convallis tellus id interdum velit laoreet id donec ultrices. In fermentum et sollicitudin ac orci phasellus. A erat nam at lectus urna. Faucibus vitae aliquet nec ullamcorper. Pretium vulputate sapien nec sagittis aliquam malesuada bibendum. Mollis nunc sed id semper risus in hendrerit gravida. Mattis molestie a iaculis at. Et magnis dis parturient montes. Pretium viverra suspendisse potenti nullam ac. Et magnis dis parturient montes nascetur ridiculus. Sit amet mauris commodo quis. Turpis massa sed elementum tempus egestas sed sed risus pretium.
+
+Libero enim sed faucibus turpis. Risus pretium quam vulputate dignissim suspendisse in est. Tortor pretium viverra suspendisse potenti. Aliquet eget sit amet tellus cras adipiscing. Id aliquet risus feugiat in ante metus dictum at. Sed euismod nisi porta lorem mollis aliquam. Viverra ipsum nunc aliquet bibendum enim facilisis gravida neque. Nisl pretium fusce id velit ut tortor. Sed libero enim sed faucibus turpis. Interdum consectetur libero id faucibus. Adipiscing enim eu turpis egestas pretium aenean pharetra magna ac.
+
+<Spacer y={1} />
+
+<Divider align="start" style={{ margin: "40px 0px" }}>
+  <h2  id={"exec"}>
+    Executive Team
+  </h2>
+</Divider>
+
+<Grid.Container gap={2} justify="center" style={{ paddingBottom: "30px" }}>
+  <TeamMember
+    name="Sai Kishan Subramanian"
+    image="https://i.ibb.co/QjbMJ8p/Student-Council-Member-5.jpg"
+    role="Secatary General"
+  />
+  <TeamMember
+    name="Sam Poder"
+    image="https://i.ibb.co/QjbMJ8p/Student-Council-Member-5.jpg"
+    role="Head of Logistics & Technology "
+  />
+  <TeamMember
+    name="Arsh Shrivastava"
+    image="https://i.ibb.co/QjbMJ8p/Student-Council-Member-5.jpg"
+    role="Head of Marketing"
+  />
+  <TeamMember
+    name="Edwin Cheah"
+    image="https://i.ibb.co/QjbMJ8p/Student-Council-Member-5.jpg"
+    role="Deputy Head of Marketing"
+  />
+  <TeamMember
+    name="Nadia Swatton"
+    image="https://i.ibb.co/QjbMJ8p/Student-Council-Member-5.jpg"
+    role="Marketing Officer"
+  />
+  <TeamMember
+    name="Devika Shenoy"
+    image="https://i.ibb.co/QjbMJ8p/Student-Council-Member-5.jpg"
+    role="Marketing Officer"
+  />
+  <TeamMember
+    name="Anjali Grillo"
+    image="https://i.ibb.co/QjbMJ8p/Student-Council-Member-5.jpg"
+    role="Marketing Officer"
+  />
+  <TeamMember
+    name="Tanisha Chandrasekaran"
+    image="https://i.ibb.co/QjbMJ8p/Student-Council-Member-5.jpg"
+    role="PR Officer"
+  />
+</Grid.Container>
+
+<Divider align="start" style={{ margin: "40px 0px" }}>
+  <h2 id={"schedule"}>
+    Schedule
+  </h2>
+</Divider>
+<Spacer y={2} />
+<Schedule style={{ margin: "90px 0px" }} />
+<Spacer y={1} />
+<Note label="Quiz Bowl">This lunchtime quiz bowl is a fun way to test the general knowledge of delegates. Students need to form groups in order to participate in this. The questions would include knowledge on general knowledge and more about the topics that were discussed in the different committees. The prize for the winner of this quiz bowl are food panda vouchers. 
+The registration form is here: </Note>
+<Spacer y={2} />
+
+
+
+
+<Divider align="start" style={{ margin: "40px 0px" }}>
+  <h2 id={"schedule"}>
+    Committees
+  </h2>
+</Divider>
+<Spacer y={2} />
+<Note>Coming soon.</Note>
+<Spacer y={2} />
+
+<Divider align="start" style={{ margin: "40px 0px" }}>
+  <h2 id={"schedule"}>
+    Rules of Procedure
+  </h2>
+</Divider>
+<p>The following rules outline how exactly the conference will run.
+It's important to read the rules throughly so you and other delegates can have
+the best expirence during the conference.
+</p>
+
+### Delegate roll call
+This is the process by which the chairs call out the countries in order to 
+find out and see who is attending and how many countries are present during 
+committee sessions. This way, the chairs are able to calculate the number of 
+delegates required within substantial and procedural voting. When you hear your 
+name, you can simply reply with present/present and voting. If you say “Present 
+and voting” you can’t abstain from voting. <br />
+
+### Opening speeches
+
+1. Character’s should prepare an opening speech for 1 minute
+2. Character’s must speak in third person during formal debate (first person pronouns are not accepted)
+
+This 1 minute speech should be accustomed towards the wishes of the 
+delegates. The opening speech must include the character’s perspective 
+on each topic and what they wish to accomplish during the committee session. 
+
+### General speaker’s list
+
+The committees should have the general speaker’s list open on the 
+topic area that will be discussed during the session. The dias 
+will open the general speaker's list or entertain any motions 
+that would like to open the speaker’s list. A member can enter 
+itself onto the general speaker’s list by sending a letter to 
+the dias or using the raise hand feature on Zoom. 
+
+
+### Lobby and merge process
+
+The opening speech is extremely important because it gives other character’s a perspective on what certain character’s want to achieve during committee sessions. 
+
+This is followed by lobbying where character’s would present their solutions which they brought up during the conference. With the use of drives and folders, character’s would then compile several solutions and  come up with a detailed resolution also known as a Merged Resolution. This resolution is then sent out to the chair and the approval panel. 
+
+Once lobbying and Merging are sorted out, the chair would sort out the resolutions in order and call the main submitter of the first resolution to read out their operative clauses. 
+
+### Amendments
+
+An amendment is a change in a certain clause in the resolution submitted by a Bloc. It is a written statement that either adds, deletes or changes a certain operative clause in a draft resolution. This process is used to strengthen the agreement on a resolution by allowing delegates to change the operative clauses. 
+
+#### Voting procedures
+
+When the discussion on the resolution has finished, voting would be conducted by chairs on the resolution as a whole. Characters can either vote for, against or abstain from voting.
+
+#### Points and motions
+
+Characters are allowed to use points and motions when communicating with their chair. It is important to know when and how to use these. 
+
+##### Points
+
+1. *Point of Information:* This is used by a character to get more information about something that isn’t clearly understood during committee sessions. 
+2. *Point of Personal Privilege:* This is used when a character has a personal problem and faces discomfort which affects their ability to participate during committee sessions.(i.e temperature of the room, distractions of the room, audibility)
+3. *Point of Order:* This is used when a character has a problem with the rules of procedure 
+
+##### Motions
+
+Motions are used by characters to request the committee regarding a particular wish a delegate would like to accomplish. Below are a following list of possible motions;
+
+1. *Motion to go into a moderated/unmoderated caucus:* This motion is used when a character would like to give additional speeches about any topic or resolution and make amendments. In a moderated caucus, characters need to sit in their respective seats and communicate with other delegates through note form. In an unmoderated Caucus, characters are allowed to freely move around the room and communicate with other delegates. 
+2. *Motion to reconsider a resolut:* This motion is presented only when all resolutions have been reviewed and there is more time for time on debate regarding previous resolutions
+3. *Motion to adjourn debate:* This motion is presented when characters wish to stop debating on a specific resolution
+4. *Motion to extend debate:* This is presented when characters are called one by one to state their individual vote. 
+5. *Motion to move into time for/against:* This motion is presented when characters would like to talk for and against the resolutions presented during committee sessions. 
+
+#### Voting procedures
+
+These are resolutions that haven’t been voted upon yet. Characters write draft resolutions with each other. 
+
+There are 3 main parts to a draft resolution: the heading, the preamble and operative clauses. The heading shows the committee and topic. It also lists the signatories and the main submitter(s). The preamble and operative clauses then explain further onto the main ideas that need to be done in order to solve the situation. There is no particular format that needs to be followed because it is just a combination of raw ideas that can later be combined into 1 resolution when characters collaborate and find out more about the measures that other countries want to take. 
+
+#### Resolution
+
+The resolution consists of 2 parts: the **preambulatory** and **operative** clauses. 
+
+The preambulatory clause states the issues that the bloc wants to solve and why it wants to solve that particular issue. In the preambulatory clause, delegates can make reference to previous statements made by organizations affiliated with your committee. 
+
+The Operative clause contains the list of solutions that the sponsor would like to propose. These clauses need to be applicable not only domestically but internationally as well. Each clause should provide the main idea and the sub clause within each clause would provide information on how this idea would be put into place. The clauses should be numbered and it should begin with an operative word that is underlined. 
+
+If sub clauses are required, they should end with a comma. Each total clause should be separated by a double space. 
+
+
+<Spacer y={2} />
+<Divider align="start" style={{ margin: "40px 0px" }}>
+  <h2 id={"schedule"}>
+    Important terms
+  </h2>
+</Divider>
+<Spacer y={2} />
+<Terms />
+<Spacer y={2} />
+<Divider align="start" style={{ margin: "40px 0px" }}>
+  <h2 id={"schedule"}>
+    General information
+  </h2>
+</Divider>
+<Spacer y={2} />
+All characters must follow the name format in order to be admitted into the meeting:
+
+```
+Name_Character_School
+Eg: Sai_IronMan_GEMS
+```
+
+If characters don’t abide by this rule, they won’t be admitted into the meeting. 
+
+Whilst debating and speaking, character’s need to have their camera on at all times. They can switch off their camera if they aren’t doing so. 
+Characters need to stay muted when another delegate is speaking. 
+
+MUN@GEMS will employ a set of warnings if a characters commits an offence(i.e. Speaking without permission, drawing on the screen, inappropriate language)
+
+First offence: If a character violates one of the rules and regulations, He will be left with a warning
+
+Second Offence: If a character violates the rules and regulations a second time, they will be temporarily kicked out of the meeting for 15 minutes and the character will not be allowed to speak regarding the topic for 2 times in a row. 
+
+Third Offence: If a character violates the rules and regulations a third time, the character will be permanently kicked out of the meeting and will not receive a certificate from the organiser. 
+
+For more information, please refer to the [code of conduct](https://docs.google.com/document/d/1O3jIQ25HD5QLhRd-EB2_38K27QmsN6NGatF2xebVj-4/edit?usp=sharing).
+
+### Dress code
+
+Since MUN@GEMS is following the theme of Fantasy, all students participating must wear costumes according to their assigned character. If the students don't have a costume related to their assigned character, they can wear clothes that match the colour code of the character. 
+
+### Contact information
+
+For any concerns, please contact [mun@gwa.edu.sg](mailto:mun@gwa.edu.sg). We will reply within 24 hours.
+
+<Spacer y={2} />
+</main>
+
+
+<style jsx global>
+  {`
+    .caption.jsx-435874419 {
+      margin-top: 1.2rem !important;
+    }
+    .jsx-1680976430{
+      left: 0!important;
+      padding-left: 0px !important
+    }
+    .jsx-435874419 {
+      margin-top: 4px !important;
+    }
+    .mainTable thead{
+      display: none;
+    }
+    .termsTable td{
+      width: 33%
+    }
+  `}
+</style>
