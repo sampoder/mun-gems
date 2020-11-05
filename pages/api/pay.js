@@ -6,7 +6,7 @@ export default async (req, res) => {
     line_items: [
       {
         name: 'Ticket to MUN @ GEMS',
-        description: 'A different kind of MUN conference.',
+        description: 'A different kind of MUN conference, all money goes to a TBD charity.',
         images: ['https://cloud-rili0t7tg.vercel.app/82225120_1255964828124592_8113147521939543579_n.jpg'],
         amount: '500', // Cents
         currency: 'sgd',
