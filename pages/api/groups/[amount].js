@@ -21,12 +21,9 @@ export default async (req, res) => {
   });
   console.log(session)
   
-  res.send(`
-  <!DOCTYPE html>
-  <script src="https://js.stripe.com/v3/"></script>
-  <script>var stripe = Stripe('pk_test_51HYoodLM7aPhXtdijpr8GzKtoqM38DpTZX1Wu1C0OAhe7zy48UYAb6yz8k9Cr2bVDWTls5zlpMrZEEnB4ZSQI0Z000WDB7zjSx');
+  res.send(`<!DOCTYPE html><script src="https://js.stripe.com/v3/"></script><script>var stripe = Stripe('pk_test_51HYoodLM7aPhXtdijpr8GzKtoqM38DpTZX1Wu1C0OAhe7zy48UYAb6yz8k9Cr2bVDWTls5zlpMrZEEnB4ZSQI0Z000WDB7zjSx');
   stripe.redirectToCheckout({
     sessionId: ${session.id},
-  })</script>`
+  })</script>`)
+           
 };
-
