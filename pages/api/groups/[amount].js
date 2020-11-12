@@ -22,14 +22,5 @@ export default async (req, res) => {
   });
   console.log(session)
   
-  const stripePromise = loadStripe(
-    "pk_live_51HYoodLM7aPhXtdi9rSpiDyBgJjZ9KJ9PvelwRnXxbkw9bK4pahoaOStrM52SSSZwC8BjaXbUzU3Igpw2aB6H5ZS00HRLDXppp"
-  );
-  // When the customer clicks on the button, redirect them to Checkout.
-  const stripeJSS = await stripePromise;
-  const result = await stripeJSS.redirectToCheckout({
-    sessionId: session.id,
-  });
-  console.log(result)
   res.redirect(`https://checkout.stripe.com/pay/${session.id}`)
 };
