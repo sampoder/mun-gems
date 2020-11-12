@@ -26,8 +26,8 @@ export default async (req, res) => {
     "pk_live_51HYoodLM7aPhXtdi9rSpiDyBgJjZ9KJ9PvelwRnXxbkw9bK4pahoaOStrM52SSSZwC8BjaXbUzU3Igpw2aB6H5ZS00HRLDXppp"
   );
   // When the customer clicks on the button, redirect them to Checkout.
-  const stripe2 = await stripePromise;
-  const result = await stripe2.redirectToCheckout({
+  const stripeJSS = await stripePromise;
+  const result = await stripeJSS.redirectToCheckout({
     sessionId: session.id,
   });
   console.log(result)
