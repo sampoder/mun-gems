@@ -1,4 +1,5 @@
 const stripe = require('stripe')(process.env.STRIPE_API_KEY);
+import { loadStripe } from "@stripe/stripe-js";
 
 export default async (req, res) => {
   const {
@@ -20,5 +21,15 @@ export default async (req, res) => {
     cancel_url: 'https://mun-gems.vercel.app'
   });
   console.log(session)
+  
+  const stripePromise = loadStripe(
+    "pk_live_51HYoodLM7aPhXtdi9rSpiDyBgJjZ9KJ9PvelwRnXxbkw9bK4pahoaOStrM52SSSZwC8BjaXbUzU3Igpw2aB6H5ZS00HRLDXppp"
+  );
+  // When the customer clicks on the button, redirect them to Checkout.
+  const stripe2 = await stripePromise;
+  const result = await stripe2.redirectToCheckout({
+    sessionId: session.id,
+  });
+  console.log(result)
   res.redirect(`https://checkout.stripe.com/pay/${session.id}`)
 };
