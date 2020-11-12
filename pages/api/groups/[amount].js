@@ -4,7 +4,7 @@ export default async (req, res) => {
   const {
     query: { amount },
   } = req
-  const session = await stripe.redirectToCheckout({
+  const session = await stripe.checkout.sessions.create({
     payment_method_types: ['card'],
     line_items: [
       {
