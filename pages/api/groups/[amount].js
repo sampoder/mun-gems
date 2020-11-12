@@ -1,5 +1,4 @@
 const stripe = require('stripe')(process.env.STRIPE_API_KEY);
-import { loadStripe } from "@stripe/stripe-js";
 
 export default async (req, res) => {
   const {
