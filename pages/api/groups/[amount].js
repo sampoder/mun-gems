@@ -20,5 +20,5 @@ export default async (req, res) => {
     cancel_url: 'https://mun-gems.vercel.app'
   });
 
-  res.redirect(`https://checkout.stripe.com/pay/${session.id}`),
+  res.redirect(`https://checkout.stripe.com/pay/${session.id}`)
 };
