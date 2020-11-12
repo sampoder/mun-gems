@@ -19,6 +19,6 @@ export default async (req, res) => {
     success_url: 'https://docs.google.com/forms/d/e/1FAIpQLSeRVHLBlWjNt4J25oU3zyLWMvCcFj8eUZV7Yg_HHtokOqYdLg/viewform?usp=pp_url&entry.1340452357={CHECKOUT_SESSION_ID}',
     cancel_url: 'https://mun-gems.vercel.app'
   });
-
+  console.log(session)
   res.redirect(`https://checkout.stripe.com/pay/${session.id}`)
 };
