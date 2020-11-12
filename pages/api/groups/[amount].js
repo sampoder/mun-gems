@@ -12,7 +12,7 @@ export default async (req, res) => {
         description: 'A different kind of MUN conference, all money goes to a TBD charity.',
         images: ['https://cloud-rili0t7tg.vercel.app/82225120_1255964828124592_8113147521939543579_n.jpg'],
         amount: amount*500, // Cents
-        currency: 'usd',
+        currency: 'sgd',
         quantity: 1
       }
     ],
