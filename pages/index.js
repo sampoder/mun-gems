@@ -90,7 +90,7 @@ export default function Home() {
                     type="success"
                     style={{ fontSize: "1em", padding: "10px 20px" }}
                   >
-                    MUN @ GEMS - March 27 & 28th
+                    MUN @ GEMS SG - March 27 & 28th
                   </Badge>
                 </p>
                 <div
@@ -130,7 +130,7 @@ export default function Home() {
                       width: isXS && "calc(100% - 40px)",
                     }}
                   >
-                    At MUN @ GEMS (March 27 & 28th), you have the chance to
+                    At MUN @ GEMS Singapore (March 27 & 28th), you have the chance to
                     represent cultural icons and draft solutions for major
                     issues in fictional worlds. Our committees include Marvel
                     vs. DC, Star Wars & the Wizarding World. It's a great way to
@@ -195,7 +195,7 @@ export default function Home() {
                       fontWeight: "800",
                     }}
                   >
-                    MUN @ GEMS - March 27 & 28th
+                    MUN @ GEMS SG - March 27 & 28th
                   </Badge>
 
                   <Image
@@ -218,7 +218,7 @@ export default function Home() {
                       width: isXS && "calc(100% - 40px)",
                     }}
                   >
-                    At MUN @ GEMS (March 27 & 28th), you have the chance to
+                    At MUN @ GEMS Singapore (March 27 & 28th), you have the chance to
                     represent cultural icons and draft solutions for major
                     issues in fictional worlds. Our committees include Marvel
                     vs. DC, Star Wars & the Wizarding World. It's a great way to
@@ -255,9 +255,9 @@ export default function Home() {
           >
             <Grid xs={24} md={16} sm={24} style={{ padding: "10px" }}>
               <Card>
-                <h4>What is MUN @ GEMS?</h4>
+                <h4>What is MUN @ GEMS SG?</h4>
                 <p>
-                  MUN @ GEMS is a student-led initiative where students
+                  MUN @ GEMS Singapore is a student-led initiative where students
                   participate as delegates in a simulated Model of the United
                   Nations to discuss Current affairs and potential solutions to
                   world issues. Our goal is for students to gain deeper
@@ -265,7 +265,7 @@ export default function Home() {
                   through discussions, collaboration and friendly debates.
                   <br />
                   <br />
-                  Moreover, MUN @ GEMS stands out due to the introduction of
+                  Moreover, MUN @ GEMS SG stands out due to the introduction of
                   Fictional Committees such as star wars and harry potter that
                   relate to the modern day generation. With this in mind, we
                   hope that students would understand and grasp the role of the
@@ -426,7 +426,7 @@ export default function Home() {
                       </Collapse>
                       <Collapse
                         style={{ display: !isXS && "none" }}
-                        title="Who can attend MUN @ GEMS?"
+                        title="Who can attend MUN @ GEMS SG?"
                       >
                         <Text>
                           Any student in Grade 6 to 11, or their school's
@@ -448,7 +448,7 @@ export default function Home() {
                     <Collapse.Group
                       style={{ padding: "0 0pt", display: isXS && "none" }}
                     >
-                      <Collapse title="Who can attend MUN @ GEMS?">
+                      <Collapse title="Who can attend MUN @ GEMS SG?">
                         <Text>
                           Any student in Grade 6 to 11, or their school's
                           equivalent.
