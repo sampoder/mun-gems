@@ -17,7 +17,7 @@ import {
 import Meta from "../components/meta";
 import { loadStripe } from "@stripe/stripe-js";
 const stripePromise = loadStripe(
-  "pk_test_51HYoodLM7aPhXtdijpr8GzKtoqM38DpTZX1Wu1C0OAhe7zy48UYAb6yz8k9Cr2bVDWTls5zlpMrZEEnB4ZSQI0Z000WDB7zjSx"
+  "pk_live_51HYoodLM7aPhXtdi9rSpiDyBgJjZ9KJ9PvelwRnXxbkw9bK4pahoaOStrM52SSSZwC8BjaXbUzU3Igpw2aB6H5ZS00HRLDXppp"
 );
 
 const handleClick = async (event) => {
@@ -90,7 +90,7 @@ export default function Home() {
                     type="success"
                     style={{ fontSize: "1em", padding: "10px 20px" }}
                   >
-                    MUN @ GEMS - March 28 & 29th
+                    MUN @ GEMS - March 27 & 28th
                   </Badge>
                 </p>
                 <div
@@ -130,7 +130,7 @@ export default function Home() {
                       width: isXS && "calc(100% - 40px)",
                     }}
                   >
-                    At MUN @ GEMS (March 28 & 29th), you have the chance to
+                    At MUN @ GEMS (March 27 & 28th), you have the chance to
                     represent cultural icons and draft solutions for major
                     issues in fictional worlds. Our committees include Marvel
                     vs. DC, Star Wars & the Wizarding World. It's a great way to
@@ -195,7 +195,7 @@ export default function Home() {
                       fontWeight: "800",
                     }}
                   >
-                    MUN @ GEMS - March 28 & 29th
+                    MUN @ GEMS - March 27 & 28th
                   </Badge>
 
                   <Image
@@ -218,7 +218,7 @@ export default function Home() {
                       width: isXS && "calc(100% - 40px)",
                     }}
                   >
-                    At MUN @ GEMS (March 28 & 29th), you have the chance to
+                    At MUN @ GEMS (March 27 & 28th), you have the chance to
                     represent cultural icons and draft solutions for major
                     issues in fictional worlds. Our committees include Marvel
                     vs. DC, Star Wars & the Wizarding World. It's a great way to
