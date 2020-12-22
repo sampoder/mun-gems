@@ -32,7 +32,7 @@ export default ({ name, image, role }) => (
       <Image
         width={446}
         height={446}
-        style={{ objectFit: "cover" }}
+        style={{ objectFit: "cover", filter: {name=="Advait Atreya" ? "brightness(1.7)" : null} }}
         src={image}
       />
     </Display>
