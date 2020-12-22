@@ -282,27 +282,15 @@ export default function Home() {
               <Card>
                 <h4>Key Dates</h4>
                 <p>
-                  <b style={{ fontWeight: "450" }}>Registration opens:</b> 10th
-                  January 2021
-                  <br />
-                  <br />
-                  <b style={{ fontWeight: "450" }}>
-                    Delegate handbooks released:
-                  </b>{" "}
-                  ?? January 2021
+                  <b style={{ fontWeight: "450" }}>Registration opens:</b> 28th
+                  December 2020
                   <br />
                   <br />
                   <b style={{ fontWeight: "450" }}>Registration closes:</b> 10th
                   March 2021
                   <br />
                   <br />
-                  <b style={{ fontWeight: "450" }}>
-                    Position papers deadline:
-                  </b>{" "}
-                  TBD
-                  <br />
-                  <br />
-                  <b style={{ fontWeight: "450" }}>Conference begins:</b> 28th
+                  <b style={{ fontWeight: "450" }}>Conference begins:</b> 27th
                   March 2021
                 </p>
               </Card>
