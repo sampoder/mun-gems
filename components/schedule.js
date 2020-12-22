@@ -41,18 +41,18 @@ export default () => {
   return (
     <>
     <Table data={blankData}>
-        <Table.Column prop="time" label="Saturday 28th March" />
+        <Table.Column prop="time" label="Saturday 27th March" />
       </Table>
       <Table data={firstDay} className="mainTable">
-        <Table.Column prop="time" label="Saturday 28th March" width={140} />
+        <Table.Column prop="time" label="Saturday 27th March" width={140} />
         <Table.Column prop="description" label=" " />
       </Table>
       <Spacer y={1} />
       <Table data={blankData}>
-        <Table.Column prop="time" label="Sunday 29th March" />
+        <Table.Column prop="time" label="Sunday 28th March" />
       </Table>
       <Table data={secondDay} className="mainTable">
-        <Table.Column prop="time" label="Saturday 28th March" width={140} />
+        <Table.Column prop="time" label="Sunday 28th March" width={140} />
         <Table.Column prop="description" label=" " />
       </Table>
     </>
