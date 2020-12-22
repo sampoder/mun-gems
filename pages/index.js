@@ -279,7 +279,7 @@ export default function Home() {
               </Card>
             </Grid>
             <Grid xs={24} md={8} sm={24} style={{ padding: "10px" }}>
-              <Card>
+              <Card style={{ height: "100%" }}>
                 <h4>Key Dates</h4>
                 <p>
                   <b style={{ fontWeight: "450" }}>Registration opens:</b> 28th
