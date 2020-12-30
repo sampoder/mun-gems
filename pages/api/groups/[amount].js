@@ -9,7 +9,7 @@ export default async (req, res) => {
     line_items: [
       {
         name: 'Delegation Payment For MUN @ GEMS',
-        description: 'A different kind of MUN conference, all money goes to a TBD charity.',
+        description: 'A different kind of MUN conference, all money goes to the Rainbow Center.',
         images: ['https://cloud-rili0t7tg.vercel.app/82225120_1255964828124592_8113147521939543579_n.jpg'],
         amount: amount*500, // Cents
         currency: 'sgd',
