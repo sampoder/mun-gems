@@ -469,7 +469,7 @@ export default function Home() {
                 <Grid.Container gap={2} justify="center">
                   <Grid xs={24} md={12} sm={12}>
                     <h3>
-                      Tickets are $5 per person, all money goes to charity.
+                      Tickets are $5 per person, all money goes to the <a href="https://www.rainbowcentre.org.sg">Rainbow Center</a>.
                     </h3>
                   </Grid>
                   <Grid
