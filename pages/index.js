@@ -480,7 +480,7 @@ export default function Home() {
                   >
                     <Button
                       type="secondary"
-                      style={{ marginTop: "-1px" }}
+                      style={{ marginTop: "-1px", marginBottom: "8px" }}
                       onClick={handleClick}
                     >
                       Register
