@@ -1,5 +1,8 @@
 {
   "github": {
     "silent": true
-  }
+  },
+  "redirects": [
+    { "source": "/groups", "destination": "https://docs.google.com/forms/d/e/1FAIpQLScMtjS6tLsnpjDwSjaKe1DUJrp1M4fjv0noouBUUvqCA5RsDQ/viewform", "permanent": true }
+  ]
 }
