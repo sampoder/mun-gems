@@ -485,14 +485,14 @@ export default function Home() {
                     >
                       Register
                     </Button>
-                    <Button
-                      type="secondary"
-                      style={{ marginTop: "-1px" }}
-                      htmlType="a"
-                      href="https://docs.google.com/forms/d/e/1FAIpQLScMtjS6tLsnpjDwSjaKe1DUJrp1M4fjv0noouBUUvqCA5RsDQ/viewform"
-                    >
-                      Group Registration
-                    </Button>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScMtjS6tLsnpjDwSjaKe1DUJrp1M4fjv0noouBUUvqCA5RsDQ/viewform">
+                      <Button
+                        type="secondary"
+                        style={{ marginTop: "-1px", marginLeft: "8px" }}
+                      >
+                        Group Registration
+                      </Button>
+                    </a>
                   </Grid>
                 </Grid.Container>
               </Card>
