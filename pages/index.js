@@ -90,7 +90,7 @@ export default function Home() {
                     type="success"
                     style={{ fontSize: "1em", padding: "10px 20px" }}
                   >
-                    MUN @ GEMS SG - March 27 & 28th
+                    MUN @ GEMS SG - 27 & 28th June
                   </Badge>
                 </p>
                 <div
@@ -130,7 +130,7 @@ export default function Home() {
                       width: isXS && "calc(100% - 40px)",
                     }}
                   >
-                    At MUN @ GEMS Singapore (March 27 & 28th), you have the chance to
+                    At MUN @ GEMS Singapore (27 & 28th June), you have the chance to
                     represent cultural icons and draft solutions for major
                     issues in fictional worlds. Our committees include Marvel
                     vs. DC, Star Wars & the Wizarding World. It's a great way to
@@ -195,7 +195,7 @@ export default function Home() {
                       fontWeight: "800",
                     }}
                   >
-                    MUN @ GEMS SG - March 27 & 28th
+                    MUN @ GEMS SG - 27 & 28th June
                   </Badge>
 
                   <Image
@@ -218,7 +218,7 @@ export default function Home() {
                       width: isXS && "calc(100% - 40px)",
                     }}
                   >
-                    At MUN @ GEMS Singapore (March 27 & 28th), you have the chance to
+                    At MUN @ GEMS Singapore (27 & 28th June), you have the chance to
                     represent cultural icons and draft solutions for major
                     issues in fictional worlds. Our committees include Marvel
                     vs. DC, Star Wars & the Wizarding World. It's a great way to
@@ -286,12 +286,12 @@ export default function Home() {
                   December 2020
                   <br />
                   <br />
-                  <b style={{ fontWeight: "450" }}>Registration closes:</b> 10th
-                  March 2021
+                  <b style={{ fontWeight: "450" }}>Registration closes:</b>
+                  June 2021
                   <br />
                   <br />
                   <b style={{ fontWeight: "450" }}>Conference begins:</b> 27th
-                  March 2021
+                  June 2021
                 </p>
               </Card>
             </Grid>
