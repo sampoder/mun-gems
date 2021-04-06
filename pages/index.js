@@ -469,7 +469,7 @@ export default function Home() {
                 <Grid.Container gap={2} justify="center">
                   <Grid xs={24} md={16} sm={16}>
                     <h3>
-                      Tickets are $5 per person, all proceeds will go to the <a href="https://www.rainbowcentre.org.sg">Rainbow Center</a>.
+                      Tickets are free of charge but places are limited.
                     </h3>
                   </Grid>
                   <Grid
@@ -478,13 +478,14 @@ export default function Home() {
                     sm={8}
                     style={{ textAlign: !isXS && "right" }}
                   >
-                    <Button
-                      type="secondary"
-                      style={{ marginTop: "-1px", marginBottom: "8px" }}
-                      onClick={handleClick}
-                    >
-                      Register
-                    </Button>
+                    <a href="https://forms.gle/pRAihyKZD6YhotdY9">
+                      <Button
+                        type="secondary"
+                        style={{ marginTop: "-1px", marginBottom: "8px" }}
+                      >
+                        Register
+                      </Button>
+                    </a>
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLScMtjS6tLsnpjDwSjaKe1DUJrp1M4fjv0noouBUUvqCA5RsDQ/viewform">
                       <Button
                         type="secondary"
@@ -509,7 +510,7 @@ export default function Home() {
           </span>
           <br /> <br />
           Supported by{" "}
-          <a href="https://gwa.edu.sg">GEMS World Academy Singapore.</a>
+          <a href="https://munimpact.org">MUN Impact.</a>
         </span>
       </footer>
     </div>
